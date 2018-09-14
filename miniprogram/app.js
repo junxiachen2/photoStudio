@@ -1,11 +1,10 @@
-//app.js
+// app.js
 App({
-  onLaunch() {
+  onLaunch () {
     wx.cloud.init({
-      traceUser: true,
+      traceUser: true
     })
   },
   globalData: {
-
   }
 })

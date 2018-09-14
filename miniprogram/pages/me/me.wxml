@@ -1,0 +1,8 @@
+<!-- 用户 openid -->
+<view class="userinfo">
+  <view class="avatar">
+    <c-img url="{{userInfo&&userInfo.avatarUrl}}" placehold="../../images/user_unlogin.png" />
+  </view>
+  <view wx:if="{{userInfo}}" class="name">{{userInfo.nickName}}</view>
+  <button wx:else class="btn" open-type="getUserInfo" bindgetuserinfo="getUserInfoHandler">点击登录</button>
+</view>

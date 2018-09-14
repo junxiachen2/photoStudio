@@ -1,0 +1,22 @@
+/* me.wxss */
+.userinfo{
+  padding: 40rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.avatar{
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 100%;
+  overflow: hidden;
+  margin-right: 40rpx;
+}
+.btn{
+  width: 200rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  margin: 0;
+  padding: 0;
+  font-size: 28rpx;
+}
