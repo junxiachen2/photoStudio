@@ -1,0 +1,7 @@
+.c-img {
+    display: none;
+}
+.c-img-ph{
+    width: 100%;
+    height: inherit;
+}

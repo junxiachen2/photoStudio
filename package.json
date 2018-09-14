@@ -1,0 +1,12 @@
+{
+  "name": "photostudio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "author": "junxiachen",
+  "license": "ISC",
+  "devDependencies": {
+    "yargs": "^12.0.2"
+  }
+}
