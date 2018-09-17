@@ -1,0 +1,21 @@
+<view bindtap="tapCell"
+        class="brave-cell {{isLastCell?'last-cell':''}} {{isLink?'brave-cell--access':''}}">
+
+    <view class="brave-cell__icon">
+        <slot name="icon"></slot>
+    </view>
+
+    <view class="brave-cell__bd">
+        <view wx:if="{{title}}" class="brave-cell__text">{{title}}</view>
+        <view wx:if="{{label}}" class="brave-cell__desc">{{label}}</view>
+        <slot></slot>
+    </view>
+
+    <view class="brave-cell__ft">
+        <block wx:if="{{value}}">{{value}}</block>
+        <block wx:else>
+            <slot name="footer"></slot>
+        </block>
+    </view>
+
+</view>

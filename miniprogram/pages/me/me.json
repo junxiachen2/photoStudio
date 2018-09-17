@@ -1,6 +1,8 @@
 {
   "component": true,
   "usingComponents": {
-    "c-img": "../../components/cimg/cimg"
+    "c-img": "../../components/cimg/cimg",
+    "cell": "../../components/cell/cell",
+    "cell-group": "../../components/cell-group/cell-group"
   }
 }

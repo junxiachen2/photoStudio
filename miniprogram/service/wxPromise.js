@@ -168,4 +168,23 @@ wxPromise.setStorage = (key, value) => {
   }
 }
 
+wxPromise.chooseImage = (obj) => {
+  return new Promise((resolve, reject) => {
+    const count = obj.count || 9
+    const sizeType = obj.sizeType || ['original', 'compressed']
+    const sourceType = obj.sourceType || ['album', 'camera']
+    wx.chooseImage({
+      count,
+      sizeType,
+      sourceType,
+      success (res) {
+        resolve(res)
+      },
+      fail () {
+        resolve(false)
+      }
+    })
+  })
+}
+
 export default wxPromise

@@ -4,5 +4,16 @@
     <c-img url="{{userInfo&&userInfo.avatarUrl}}" placehold="../../images/user_unlogin.png" />
   </view>
   <view wx:if="{{userInfo}}" class="name">{{userInfo.nickName}}</view>
-  <button wx:else class="btn" open-type="getUserInfo" bindgetuserinfo="getUserInfoHandler">点击登录</button>
+  <button wx:else class="btn" open-type="getUserInfo" bindgetuserinfo="getUserInfoHandler">
+    点击登录
+  </button>
+</view>
+<view class="group">
+  <cell-group>
+    <navigator url="../../pages/order/order">
+      <cell isLink="true" title="我的订单">
+        <!-- <image slot="icon" src="../../images/user_unlogin.png"></image> -->
+      </cell>
+    </navigator>
+  </cell-group>
 </view>

@@ -1,4 +1,4 @@
 <!--index.wxml-->
 <view>
-  index.html
+  <view class="btn" bindtap="uploadHandler">上传图片</view>
 </view>
