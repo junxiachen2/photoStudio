@@ -1,1 +1,16 @@
-/* order.wxss */
+.list{
+
+}
+.listItem{
+  margin-bottom: 30rpx;
+  border-top: 1rpx solid #ddd;
+  border-bottom: 1rpx solid #ddd;
+  background: #fff;
+}
+.saveBtn{
+  width: 200rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  border: 1rpx solid #000;
+}

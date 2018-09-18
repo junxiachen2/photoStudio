@@ -1,1 +1,5 @@
 /* cell-group.wxss */
+.brave-cell-group{
+  border-top: 1rpx solid #ddd;
+  border-bottom: 1rpx solid #ddd;
+}

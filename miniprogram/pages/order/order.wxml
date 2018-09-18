@@ -1,2 +1,14 @@
-<!--order.wxml-->
-<text>order.wxml</text>
+<view class="list">
+  <view class="listItem" wx:for="{{list}}" wx:for-item="item" wx:key="item{{index}}">
+    <view class="date">{{item.createTime}}</view>
+    <view class="type">类型:{{item.type==0?'AAA':'BBB'}}</view>
+    <view class="status">状态: {{item.status==0?'生成中':'已生成'}}</view>
+    <block wx:if="{{item.status==1}}">
+      <view class="resultImg">
+        <c-img url="{{item.certPath}}" preview="{{true}}"></c-img>
+      </view>
+      <view class="tip">提示: 点击图片可放大预览</view>
+      <view class="saveBtn" bindtap="saveHandler" data-url="{{item.cloudPath}}">保存至相册</view>
+    </block>
+  </view>
+</view>

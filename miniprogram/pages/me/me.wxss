@@ -21,7 +21,14 @@
   font-size: 28rpx;
 }
 .group{
-  border-top: 1rpx solid #ddd;
-  border-bottom: 1rpx solid #ddd;
   background: #fff;
+}
+.contact{
+  padding: 0;
+  text-align: inherit;
+  background-color: inherit;
+}
+.contact::after{
+  border: 0;
+  border-radius: 0;
 }

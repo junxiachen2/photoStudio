@@ -15,5 +15,11 @@
         <!-- <image slot="icon" src="../../images/user_unlogin.png"></image> -->
       </cell>
     </navigator>
+    <button class="contact" open-type="feedback">
+      <cell isLink="true" title="意见反馈"></cell>
+    </button>
+    <button class="contact" open-type="contact">
+      <cell isLink="true" title="联系客服"></cell>
+    </button>
   </cell-group>
 </view>
